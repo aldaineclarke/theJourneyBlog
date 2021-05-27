@@ -96,6 +96,56 @@ li a {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5rem;
 }
+.comment_container {
+  font-size: 0.8em;
+}
+.comment_container img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(238, 238, 238);
+  object-fit: cover;
+  object-position: center;
+}
+.comment__form {
+  display: flex;
+  gap: 10px;
+  margin: 1rem 0;
+}
+.comment__form input {
+  border: none;
+  width: 70%;
+  height: 2rem;
+  border-bottom: 1px solid var(--space-cadet);
+}
+.comment__form form {
+  flex-grow: 1;
+}
+.comment__form .cta {
+  margin-top: 0.3rem;
+  display: flex;
+  gap: 10px;
+}
+.comment__heap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0 2rem 3rem;
+}
+.commenter {
+  display: flex;
+  gap: 10px;
+}
+.commenter__name a {
+  font-weight: bold;
+  color: var(--space-cadet);
+}
+.comment_container input:focus {
+  outline: none;
+  background-color: rgba(238, 238, 238, 0.322);
+  border-width: 3px;
+}
+
 .intro-text h2 {
   font-size: 2.3em;
   margin-bottom: 1rem;
@@ -111,7 +161,7 @@ li a {
 .intro-text div {
   display: flex;
 }
-.cta {
+.intro-text .cta {
   display: inline-block;
   min-height: 35px;
   margin-top: 1.5rem;
@@ -196,6 +246,10 @@ li a {
   line-height: 1.9rem;
 }
 /*  ==============================================Utility Styles======================================== */
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
 .jumbo-1 {
   font-size: 4em;
 }
@@ -230,6 +284,9 @@ li a {
 .smaller {
   font-size: smaller;
 }
+*[class^="outline-"] {
+  transition: background-color 500ms linear;
+}
 .outline-light {
   border: 2px solid lightcyan;
   background-color: transparent;
@@ -249,6 +306,20 @@ li a {
 .outline-dark:hover {
   background-color: var(--space-cadet);
   color: lightcyan;
+}
+button.no-style {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: lightgrey;
+  font-weight: bold;
+}
+button.no-style:hover {
+  color: var(--space-cadet);
+  transition: color 500ms linear;
+}
+.hide {
+  display: none;
 }
 .pic-art.animate {
   animation: undulate 2000ms infinite linear both;

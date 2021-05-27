@@ -1,0 +1,7 @@
+Create pages for Login, SignUp, Profile/Dashboard.
+Create a Link between each page so they connect and can be easily transitioned over to.
+Fix the hover state of the links change it from bold and stop it from interfering with the outlined "button"
+
+
+Have the comment section be an ajax call to the database/server
+Create the Add new Article page and find out how the data will be collected
