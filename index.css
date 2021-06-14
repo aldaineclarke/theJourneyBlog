@@ -45,37 +45,6 @@ li a {
   padding: 0 10px;
 }
 
-nav .flex {
-  gap: 5px;
-}
-.dashboard {
-  display: grid;
-  grid-template-columns: 200px auto;
-}
-.dashboard aside {
-  --font-color: var(--space-cadet);
-  min-height: 85vh;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
-  /* background-color: var(--space-cadet); */
-}
-.dashboard__list {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.dashboard__item {
-}
-.dashboard__content {
-  padding: 10px;
-}
-.dashboard__item.active,
-.dashboard__item:hover {
-  --font-color: lightcyan;
-  background-color: var(--space-cadet);
-  color: lightcyan;
-}
-
 .landing-page {
   background: linear-gradient(to bottom right, #0071c5, #7df9ff);
 }
@@ -140,7 +109,14 @@ nav .flex {
 .comment_container {
   font-size: 0.8em;
 }
-
+.comment_container img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(238, 238, 238);
+  object-fit: cover;
+  object-position: center;
+}
 .comment__form {
   display: flex;
   gap: 10px;
@@ -292,9 +268,6 @@ nav .flex {
 }
 .signUp-grid .bg_space-cadet p {
   margin-top: 3rem;
-}
-.login {
-  mix-blend-mode: hard-light;
 }
 .login form {
   --font-color: lightcyan;
@@ -489,30 +462,9 @@ button.no-style:hover {
 .pic-art.animate {
   animation: undulate 2000ms infinite linear both;
 }
-.round {
-  border-radius: 50%;
-}
+
 .shadow {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.07);
-}
-.mountain {
-  background-image: url("/assets/IMG/mountain2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-
-.thumbnailx1 {
-  height: 2.5rem;
-  width: 2.5rem;
-  object-fit: cover;
-  object-position: center;
-}
-.flex {
-  display: flex;
-}
-.align-center {
-  align-items: center;
 }
 
 /* KeyFrames */
