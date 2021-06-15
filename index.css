@@ -44,6 +44,27 @@ li a {
   align-items: center;
   padding: 0 10px;
 }
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+.dashboard__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 80vh;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.07);
+}
+.dashboard__item {
+}
+.dashboard__item.active,
+.dashboard__item:hover {
+  background: var(--space-cadet);
+  --font-color: lightcyan;
+}
+.dashboard__content {
+  padding: 10px;
+}
 
 .landing-page {
   background: linear-gradient(to bottom right, #0071c5, #7df9ff);
@@ -269,6 +290,13 @@ li a {
 .signUp-grid .bg_space-cadet p {
   margin-top: 3rem;
 }
+input::-webkit-input-placeholder {
+  background-color: inherit;
+}
+.login {
+  background-color: var(--space-cadet);
+  background-blend-mode: soft-light;
+}
 .login form {
   --font-color: lightcyan;
   width: 300px;
@@ -394,6 +422,12 @@ li a {
 .jumbo-4 {
   font-size: 1.5em;
 }
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
 .right {
   margin-left: auto;
 }
@@ -462,9 +496,21 @@ button.no-style:hover {
 .pic-art.animate {
   animation: undulate 2000ms infinite linear both;
 }
+.mountain {
+  background-image: url("/assets/IMG/mountain.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 
 .shadow {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.07);
+}
+.thumbnailx1 {
+  height: 60px;
+  width: 60px;
+}
+.round {
+  border-radius: 50%;
 }
 
 /* KeyFrames */
