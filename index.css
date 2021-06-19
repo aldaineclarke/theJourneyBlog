@@ -48,12 +48,18 @@ li a {
   display: grid;
   grid-template-columns: 200px auto;
 }
+.crm {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 72px auto 37px;
+}
+
 .dashboard__list {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  height: 80vh;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.07);
+  height: 100%;
 }
 .dashboard__item {
 }
@@ -63,7 +69,25 @@ li a {
   --font-color: lightcyan;
 }
 .dashboard__content {
+  --font-color: var(--space-cadet);
   padding: 10px;
+  color: var(--font-color);
+  background-color: whitesmoke;
+}
+.col {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.14);
+}
+.dashboard__content .empty-content {
+  background-color: inherit;
+  text-align: center;
+  margin-top: 3rem;
+  box-shadow: none;
+}
+.empty-content button {
+  margin-top: 1rem;
 }
 
 .landing-page {
@@ -175,6 +199,35 @@ li a {
   outline: none;
   background-color: rgba(238, 238, 238, 0.322);
   border-width: 3px;
+}
+.cards {
+  margin: 1rem 0;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.card {
+  --font-color: lightcyan;
+  width: 30%;
+  border: 1px solid lightgrey;
+  color: var(--font-color);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--space-cadet),
+    var(--space-cadet),
+    var(--intel-blue)
+  );
+  border-radius: 0 30px 0 0;
+}
+.card__head {
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+  font-size: 1.1em;
+}
+.card__body {
+  text-align: right;
+  padding: 10px;
 }
 
 .intro-text h2 {
@@ -424,6 +477,7 @@ input::-webkit-input-placeholder {
 }
 .flex {
   display: flex;
+  align-items: flex-start;
 }
 .align-center {
   align-items: center;
@@ -506,11 +560,20 @@ button.no-style:hover {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.07);
 }
 .thumbnailx1 {
-  height: 60px;
-  width: 60px;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.thumbnailx200 {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 .round {
   border-radius: 50%;
+}
+.gap-1 {
+  gap: 1rem;
 }
 
 /* KeyFrames */

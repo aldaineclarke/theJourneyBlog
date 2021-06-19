@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Profile</title>
 </head>
-<body>
+<body class="crm">
     <header>
         <nav class="shadow">
             <ul>
@@ -28,7 +28,7 @@
         <aside>
             <ul class="dashboard__list">
                 <li class="dashboard__item active"><a href="">Dashboard</a></li>
-                <li class="dashboard__item"><a href="">Articles</a></li>
+                <li class="dashboard__item"><a href="/articles.html">Articles</a></li>
                 <li class="dashboard__item"><a href="">Favourites</a></li>
                 <li class="dashboard__item"><a href="">About</a></li>
                 <li class="dashboard__item"><a href="">Settings</a></li>
@@ -36,27 +36,71 @@
 
         </aside>
         <section class="dashboard__content">
-            <div class="row flex">
-                <img src="/assets/IMG/default.jpg" alt="Profile">
-                <div>
-                    <h2>Damien Jr Timbrel</h2>
-                    <p>damienjrtimbrel@timbrel.com</p>
+            <div class="row">
+                <div class="col flex">
+                    <img class="thumbnailx200 round" src="/assets/IMG/default.jpg" alt="Profile">
+                    <div>
+                        <div class="flex">
+                            <div>
+                                <h2>Damien Jr Timbrel</h2>
+                                <p>damienjrtimbrel@timbrel.com</p>
+                                <div class="smaller">
+                                    <p class="muted">Joined <span>July 2021</span></p>
+                                    <p><span class="muted">Followers: </span>41</p>
+                                </div>
+                            </div>
+                            <button class="right outline-dark">Edit profile</button>
+                    
+                        </div>
+                    
+                        <p class="smaller">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, praesentium blanditiis omnis iure
+                            odio velit ex a accusamus asperiores quibusdam voluptatem, maiores optio esse quam dolor dolorem odit recusandae
+                            eum autem? Suscipit nisi neque enim quas aspernatur esse, omnis quaerat totam possimus architecto similique aut!
+                            Nam voluptatum sequi quos voluptate.</p>
+                    </div>
                 </div>
-
+                
             </div>
-            <div class="flex">
-                <div class="card">
-                    <p>My Articles</p>
-                    <p class="text-center">15</p>
+            <div class="row flex mt-1">
+               <div class="col flex">
+                <div class="cards flex">
+                    <div class="card">
+                        <p class="card__head"> Articles</p>
+                        <p class="card__body">15</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__head">Favourites</p>
+                        <p class="card__body">10</p>
+                    </div>
+                    <div class="card">
+                        <p class="card__head">Comments</p>
+                        <p class="card__body">22</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <p>Favourites</p>
-                    <p class="text-center">10</p>
+               </div>
+            </div>
+            <div class="row flex gap-1 mt-1">
+                <div class="col">
+                    <div class="top">
+                        <h5>News</h5>
+                    </div>
+                    <div class="story smaller">
+                        <div class="story__item">
+                            <p class="story__title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, quas?</p>
+                            <button>Preview</button>
+                        </div>
+
+
+                    </div>
+                    
                 </div>
-                <div class="card">
-                    <p>Comments</p>
-                    <p class="text-center">10</p>
+                <div class="col">
+                    <div class="top">
+                        <h5>Comments</h5>
+                    </div>
+
                 </div>
+                    
             </div>
 
 
