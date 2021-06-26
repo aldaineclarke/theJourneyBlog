@@ -39,10 +39,33 @@
 
         </aside>
         <section class="dashboard__content">
-            <div class="empty-content">
-                <h2 class="muted text-center">I'm sorry,<br> Not seeing any created articles.</h2>
-                <a href="/createForm.html" class=" mt-1 outline-dark">Create Article</a>
-            </div>
+            <form action="" method="post" class="editForm">
+                <legend>Create Blog Post</legend>
+                <p class="smaller">To make the content more dynamic this form converts whatever inputed in the field from markdown into html. This means that you will be able to make your content bold, emphasized and even have distinct sections and headers.</p>
+                <label for="title">Blog Title*</label>
+                <input type="text" name="title" id="title">
+                <label for="body">Blog Body</label>
+                <textarea name="text" id="" cols="30" rows="10" placeholder=" What's on your mind?"></textarea>
+                <fieldset>
+                    <p>Enable Comments?</p>
+                    
+                    <div class="flex gap-1">
+                        <label for="enable" class="flex align-center gap-1">
+                            <span>Yes </span>
+                            <input type="radio" name="comments" id="enable" value="enabled" />
+                        </label>
+                        <label for="disable" class="flex align-center gap-1">
+                            <span>No </span>
+                            <input type="radio" name="comments" id="disable" value="disabled" />
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="flex align-center gap-1">
+                    <a href="/articles.html" class="right">CANCEL</a>
+                    <button type="submit" class="outline-dark">Submit Post</button>
+                </div>
+                
+            </form>
 
 
 
