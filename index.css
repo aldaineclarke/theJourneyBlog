@@ -157,6 +157,7 @@ main {
 .mini-section > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  --font-color: var(--space-cadet);
 }
 .mini-section > div img {
   margin: 0 auto;
@@ -199,7 +200,6 @@ main {
 }
 .comment__form .cta {
   margin-top: 0.3rem;
-  display: flex;
   gap: 10px;
 }
 .comment__heap {
@@ -213,8 +213,8 @@ main {
   gap: 10px;
 }
 .commenter__name a {
+  --font-color: var(--space-cadet);
   font-weight: bold;
-  color: var(--space-cadet);
 }
 .comment_container input:focus {
   outline: none;

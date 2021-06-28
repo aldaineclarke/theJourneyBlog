@@ -64,10 +64,10 @@
             <h3 class="jumbo-4">Comment: (2)</h3>
             <div class="comment__form">
                 <img src="/assets/IMG/default.jpg" alt="current user profile thumbnail">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Add a comment.">
-                    <div class="cta hide">
-                    <button class="no-style" onclick="return false;"> Cancel</button><buttom type="submit" class="outline-dark">Comment</buttom>
+                <form>
+                    <input type="text" name="" id="comment-input" placeholder="Add a comment.">
+                    <div class="cta hide flex align-center">
+                    <button class="no-style cancel-comment"> Cancel</button><buttom type="submit" class="outline-dark">Comment</buttom>
 
                     </div>
                 </form>
@@ -106,9 +106,10 @@
         <div class="lower-footer">
             <a href="#" class="f-links">Terms of use</a><a href="#" class="f-links">Privacy Policy</a><a href="#"
                 class="f-links">Terms and Condition</a><a href="#" class="f-links"> Contact</a>
-            <p class="right muted">&copy; Copyright</p>
+            <p class="right muted">&copy; Copyright <span id="year"></span></p>
         </div>
     
     </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
