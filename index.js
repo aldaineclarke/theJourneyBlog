@@ -3,7 +3,14 @@
 // gets the full copyright year
 let year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
+let hamburger = document.querySelector(".hamburger");
 
+hamburger.addEventListener("click", ()=>{
+    let dashboard = document.querySelector(".dashboard__list")
+    if(dashboard.classList.contains("active")){
+        dashboard.classList.remove("active");
+    }else dashboard.classList.add("active");
+});
 let commentInput = document.querySelector("#comment-input");
 
 commentInput.addEventListener("focus",()=>{
